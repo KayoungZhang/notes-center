@@ -9,8 +9,14 @@ notes center
    :titlesonly:   
 
    github/github_accelerate
+   other/fluent_writing
    
-   
+.. toctree::
+   :maxdepth: 2
+   :caption: 电脑疑难杂症
+   :titlesonly:   
+
+     
 
    
 
