@@ -58,7 +58,7 @@ maxdepth指定目录显示的标题深度，通常选择1。caption是主题的�
 .. figure:: 
 	pic/06.png
 
-8. 删除buil目录，然后整上传github
+8. 删除build目录，然后整上传github
 ---------------------------------------
 	
 9. Github托管
