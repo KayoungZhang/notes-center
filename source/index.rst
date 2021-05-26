@@ -5,11 +5,10 @@ notes center
 
 .. toctree::
    :maxdepth: 3
-   :caption: 开发板
+   :caption: reading notes
    :titlesonly:   
 
-   boards/arm-linux/zdyz-i.mx6ull
-   boards/arm-linux/zdyz-i.mx6ullmini
+   github/github_accelerate
    
    
 .. toctree::
@@ -17,9 +16,7 @@ notes center
    :caption: 开发工具
    :titlesonly:   
 
-   tool/solder/solder
-   tool/shiboqi/sbq
-   tool/shiboqi/ATK-HSDAP
+
    
 
 
