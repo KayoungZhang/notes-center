@@ -6,27 +6,27 @@ Windows变量路径与通配符
 
 %SystemDrive%	操作系统所在的分区号。如   C:
 
-%SystemRoot%  	操作系统根目录。如 C:\WINDOWS
+%SystemRoot%  	操作系统根目录。如 C:\\WINDOWS
 
-%windir%  	操作系统根目录。如 C:\WINDOWS
+%windir%  	操作系统根目录。如 C:\\WINDOWS
 
-%ALLUSERSPROFILE%	 相当于   C:\Documents and Settings\All Users
+%ALLUSERSPROFILE%	 相当于   C:\\Documents and Settings\\All Users
 
-%APPDATA%	  相当于   C:\Documents and Settings\用户目录\Application Data
+%APPDATA%	  相当于   C:\\Documents and Settings\\用户目录\\Application Data
 
-%ProgramFiles%	 相当于   C:\Program Files
+%ProgramFiles%	 相当于   C:\\Program Files
 
-%CommonProgramFiles%  	相当于   C:\Program Files\Common Files
+%CommonProgramFiles%  	相当于   C:\\Program Files\\Common Files
 
 %HOMEDRIVE%  	操作系统所在的分区号。如：C:
 
-%HOMEPATH%  	相当于   \Documents and Settings\用户目录
+%HOMEPATH%  	相当于   \\Documents and Settings\\用户目录
 
-%USERPROFILE%  	相当于   C:\Documents and Settings\用户目录
+%USERPROFILE%  	相当于   C:\\Documents and Settings\\用户目录
 
 %ALLUSERSPROFILE%	列出所有用户Profile文件位置。
 
-%system%  	 = C:\WINDOWS\SYSTEM32  
+%system%  	 = C:\\WINDOWS\\SYSTEM32  
 
 %APPDATA% :	  列出应用程序数据的默认存放位置。
 
