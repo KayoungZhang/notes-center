@@ -4,12 +4,30 @@ notes center
 ====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: 读书笔记
    :titlesonly:   
 
    github/github_accelerate
    other/fluent_writing
+   other/office_calender
+   other/pressure_unit
+   other/tube
+   other/color
+   other/hex
+   other/capacitor_inductor
+   
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: C语言基础
+   :titlesonly:   
+
+   c-language/ascii
+   c-language/bit_shift
+   c-language/data_type
+   c-language/pointer
+   c-language/contraction
    
 .. toctree::
    :maxdepth: 2
@@ -29,4 +47,10 @@ notes center
    pc/winshare
    pc/office_hyperlink_error
 
+.. toctree::
+   :maxdepth: 3
+   :caption: 环境监测与技术
+   :titlesonly:   
 
+   environment/smoke_dust/nozzle
+   environment/voc/C-absorb
