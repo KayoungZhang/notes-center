@@ -23,7 +23,9 @@ notes center
    :caption: 电脑疑难杂症
    :titlesonly:   
 
-     
+   pc/windows_path
+   pc/bat_command
+   
 
    
 
