@@ -5,11 +5,18 @@ notes center
 
 .. toctree::
    :maxdepth: 2
-   :caption: reading notes
+   :caption: 读书笔记
    :titlesonly:   
 
    github/github_accelerate
    other/fluent_writing
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: 产品开发
+   :titlesonly:   
+
+   other/product_document_system
    
 .. toctree::
    :maxdepth: 2
