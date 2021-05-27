@@ -25,9 +25,8 @@ notes center
 
    pc/windows_path
    pc/bat_command
-   
-
-   
-
+   pc/HP-printer-wireless_setting
+   pc/winshare
+   pc/office_hyperlink_error
 
 
