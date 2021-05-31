@@ -33,9 +33,12 @@ Notes Center
 
    c-language/ascii
    c-language/bit_shift
+   c-language/bit_micro
    c-language/data_type
    c-language/pointer
    c-language/contraction
+   c-language/printf_format
+   
    
 .. toctree::
    :maxdepth: 2
