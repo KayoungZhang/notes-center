@@ -1,4 +1,6 @@
-.. Notes Center
+==================
+Notes Center
+==================
 
 Notes taking during learning and working.
 
