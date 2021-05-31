@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'data center'
-copyright = '2021, Kayoung'
+copyright = '2021, KayoungZhang'
 author = 'kayoung'
 
 # The full version, including alpha/beta/rc tags
@@ -49,8 +49,8 @@ language = 'zh_CN'
 exclude_patterns = []
 
 #supported markdown
-source_suffix = ['.rst', '.md', '.txt', '.docx' '.doc']
-master_doc = 'index'
+source_suffix = ['.rst', '.md']
+master_doc = "index"
 
 # -- Options for HTML output -------------------------------------------------
 

@@ -1,5 +1,7 @@
 .. ".. "是注释符号,"======= "上面文字是一级标题,"---------- "上面的文字是二级标题,"^^^^^^^^ "上面的文字是三级标题,"- "表示圆点
 
+.. include:: ../README.rst
+
 notes center
 ====================
 
@@ -9,6 +11,8 @@ notes center
    :titlesonly:   
 
    other/fluent_writing
+   other/reStructuredText
+   other/rst
    github/github_accelerate
    other/office_calender
    other/pressure_unit
@@ -17,7 +21,9 @@ notes center
    other/hex
    other/capacitor_inductor
    other/office_protect
-   
+   other/gdb-test
+   other/notepad-set
+  
    
 .. toctree::
    :maxdepth: 2
@@ -36,6 +42,10 @@ notes center
    :titlesonly:   
 
    other/product_document_system
+   stc/stc_download
+   stc/stc_autodownload
+   stc/usb-autodownload
+   stc/usb-rs232-ttl
    
 .. toctree::
    :maxdepth: 2
@@ -55,3 +65,6 @@ notes center
 
    environment/smoke_dust/nozzle
    environment/voc/C-absorb
+
+
+
