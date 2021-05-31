@@ -340,6 +340,20 @@ reStructuredText常用规则
     Git尚不了解，可以参考我写的 《Git权威指南》\ [#]_\ 一书。此外还可以从网上\
     找到很多免费的、很好的Git资料，如：Git社区书\ [#]_\ 、Pro Git\ [#]_\ 等。
 
+9. rst格式
+-------------------
+::
+
+	.. include:: ../README.rst	在index.rst中添加其他rst文件
+	.. contents:: 目录	       生成目录
+	
+	.. toctree::
+	   :glob:			生成次级标题目录
+	   :maxdepth: 3			显示最大目录层级
+	   :caption: 读书笔记	     显示 读书笔记
+	   :titlesonly:			只显示标题
+	   :numbered: 2			生成次级下两级标题目录
+
 参考
 ---------------
 https://linuxtools-rst.readthedocs.io/zh_CN/latest/helloworld.html

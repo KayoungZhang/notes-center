@@ -4,9 +4,9 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption: 读书笔记
-   :titlesonly:   
-
+   :caption: 读书笔记 
+   :titlesonly: 
+   
    other/fluent_writing
    other/reStructuredText
    github/github_accelerate
