@@ -3,6 +3,8 @@
 reStructuredText常用规则
 ==================================================
 
+.. contents:: 目录
+.. section-numbering
 
 1. 段落章节
 -----------------------
@@ -266,8 +268,81 @@ reStructuredText常用规则
 * `《PEP8.org》 <http://pep8.org/>`_
 * `《PEP 8 -- Style Guide for Python Code》 <https://www.python.org/dev/peps/pep-0008/>`_
 
+8. 提示框
+---------------------
+::
 
+	.. Attention:: Directives at large.
 
+	.. Caution:: Don't take any wooden nickels.
 
+	.. DANGER:: Mad scientist at work!
 
+	.. Error:: Does not compute.
+
+	.. Hint:: It's bigger than a bread box.
+
+	.. Important::
+	   - Wash behind your ears.
+	   - Clean up your room.
+	   - Call your mother.
+	   - Back up your data.
+
+	.. Note:: This is a note.
+
+	.. Tip:: 15% if the service is good.
+
+	.. WARNING:: Strong prose may provoke extreme mental exertion.
+	   Reader discretion is strongly advised.
+
+	.. admonition:: And, by the way...
+
+	   You can make up your own admonition too.
+
+	.. seealso::
+
+		本书并非一本介绍Git的书，并且假设读者已经掌握了Git的相关操作。如果读者对\
+		Git尚不了解，可以参考我写的 《Git权威指南》\ [#]_\ 一书。此外还可以从网上\
+		找到很多免费的、很好的Git资料，如：Git社区书\ [#]_\ 、Pro Git\ [#]_\ 等。
+
+效果：
+
+.. Attention:: Directives at large.
+
+.. Caution:: Don't take any wooden nickels.
+
+.. DANGER:: Mad scientist at work!
+
+.. Error:: Does not compute.
+
+.. Hint:: It's bigger than a bread box.
+
+.. Important::
+   - Wash behind your ears.
+   - Clean up your room.
+   - Call your mother.
+   - Back up your data.
+
+.. Note:: This is a note.
+
+.. Tip:: 15% if the service is good.
+
+.. WARNING:: Strong prose may provoke extreme mental exertion.
+   Reader discretion is strongly advised.
+
+.. admonition:: And, by the way...
+
+   You can make up your own admonition too.
+
+.. seealso::
+
+    本书并非一本介绍Git的书，并且假设读者已经掌握了Git的相关操作。如果读者对\
+    Git尚不了解，可以参考我写的 《Git权威指南》\ [#]_\ 一书。此外还可以从网上\
+    找到很多免费的、很好的Git资料，如：Git社区书\ [#]_\ 、Pro Git\ [#]_\ 等。
+
+参考
+---------------
+https://linuxtools-rst.readthedocs.io/zh_CN/latest/helloworld.html
+https://www.jianshu.com/p/1885d5570b37
+https://docutils.sourceforge.io/docs/user/rst/quickref.html
 

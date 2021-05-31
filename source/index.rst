@@ -2,10 +2,6 @@
 
 .. include:: ../README.rst
 
-===================
-Notes Center
-====================
-
 .. toctree::
    :maxdepth: 3
    :caption: 读书笔记
@@ -13,7 +9,6 @@ Notes Center
 
    other/fluent_writing
    other/reStructuredText
-   other/rst
    github/github_accelerate
    other/office_calender
    other/pressure_unit
