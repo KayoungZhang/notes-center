@@ -2,7 +2,8 @@
 
 .. include:: ../README.rst
 
-notes center
+===================
+Notes Center
 ====================
 
 .. toctree::
@@ -42,6 +43,7 @@ notes center
    :titlesonly:   
 
    other/product_document_system
+   other/keil_usage
    stc/stc_download
    stc/stc_autodownload
    stc/usb-autodownload
