@@ -21,6 +21,7 @@
    other/notepad-set
    other/sw_hw_test
    other/communication_integrality
+   other/typora_basic
   
    
 .. toctree::
