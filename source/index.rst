@@ -19,6 +19,8 @@
    other/office_protect
    other/gdb-test
    other/notepad-set
+   other/sw_hw_test
+   other/communication_integrality
   
    
 .. toctree::
