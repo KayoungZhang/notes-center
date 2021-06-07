@@ -54,7 +54,7 @@
 
 打开gitbash命令行窗口，输入git init回车，test文件夹中多了.git文件夹，它是Git用来跟踪和管理版本库的。
 
-**- 添加需要上传的文件，并进行上传** :
+**- 添加需要上传的文件，并提交到本地库** :
 
 把需要上传到GitHub的文件全部复制到这test这个目录下。然后在bash命令窗口输入git add .(注意这个"."，是有空格的，"."代表这个test这个文件夹下的目录全部都提交。你也可以通过（git add 文件名）提交指定的文件)把文件添加到缓存区，再使用命令git commit -m "这里面写你的注释"  把文件提交的本地仓库。
 
@@ -75,7 +75,17 @@
 	git pull --rebase origin master
 	git push origin master
 
+**- 添加修改了内容提交** ：
 
+添加修改后的内容再次进行提交，只需要进行以下操作::
+
+	git add 文件内容名
+	git commit -m "提交的注释"
+	git push
+	
+7. clone repository。 
+-------------------------------------	
+如果不通过第6步进行本地创建和推送，也可以通过 `git clone https://github.com/KayoungZhang/notes-center.git` 把github上创建的repository clone到本地，再进行远程关联也可以。
 
 
 
