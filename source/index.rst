@@ -9,6 +9,7 @@
    
    other/fluent_writing
    other/reStructuredText
+   other/github_upload
    github/github_accelerate
    other/office_calender
    other/pressure_unit
