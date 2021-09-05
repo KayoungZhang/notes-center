@@ -19,5 +19,4 @@ command in github:
 - git checkout --	//切换到分支
 - git checkout master	//切换到master主线
 - git merge		//合并分支内容
-- git 
 
