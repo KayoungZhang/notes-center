@@ -32,8 +32,9 @@ release = '1.0.0'
 # ones.
 #extensions = [
 #]
-
-extensions = ['myst_parser']
+# 支持markdown表格，需要安装sphinx-markdown_tables,然后添加sphinx_markdown_tables
+extensions = ['myst_parser', 'sphinx_markdown_tables'
+]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -49,8 +50,14 @@ language = 'zh_CN'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-#supported markdown
+#supported markdown , pip install recommonmark
+from recommonmark.parser import CommonMarkParser
+source_parsers = {
+    '.md': CommonMarkParser,
+}
 source_suffix = ['.rst', '.md']
+
+
 master_doc = "index"
 
 # -- Options for HTML output -------------------------------------------------
