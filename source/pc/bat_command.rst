@@ -30,80 +30,90 @@ Windows bat批处理命令
 
 缺点: 时间精度为1秒,不够精确
 
-@echo off
+.. code-block:: batch
 
-@ping 127.0.0.1 -n 6 >nul
+	@echo off
 
-start gdh.txt
+	@ping 127.0.0.1 -n 6 >nul
 
-- vbs start /wait
+	start gdh.txt
+
+	- vbs start /wait
 
 缺点：生成临时文件
 
 优点：时间精度为0.001秒，精度高
 
-@echo off
+.. code-block:: batch
 
-echo wscript.sleep 5000>sleep.vbs
+	@echo off
 
-start /wait sleep.vbs
+	echo wscript.sleep 5000>sleep.vbs
 
-start gdh.txt
+	start /wait sleep.vbs
 
-del /f /s /q sleep.vbs
+	start gdh.txt
+
+	del /f /s /q sleep.vbs
 
 - vbs cscript
 
-@echo off
+.. code-block:: batch
 
-echo wscript.sleep 5000>sleep.vbs
+	@echo off
 
-@cscript sleep.vbs >nul
+	echo wscript.sleep 5000>sleep.vbs
 
-start gdh.txt
+	@cscript sleep.vbs >nul
 
-del /f /s /q sleep.vbs
+	start gdh.txt
+
+	del /f /s /q sleep.vbs
 
 - choice
 
 优点：时间精确，CPU占用低，是最佳选择
 
-@echo off
+.. code-block:: batch
 
-choice /t 5 /d y /n >nul
+	@echo off
 
-start gdh.txt
+	choice /t 5 /d y /n >nul
+
+	start gdh.txt
 
 - for+set+if，时间精度为0.01秒
 
 缺点：CPU占用高，语句过长，不常用
 
-@echo off
+.. code-block:: batch
 
-setlocal enableextensions
+	@echo off
 
-echo %time%
+	setlocal enableextensions
 
-call :ProcDelay 500
+	echo %time%
 
-echo %time%
+	call :ProcDelay 500
 
-start gdh.txt
+	echo %time%
 
-:ProcDelay delayMSec_
+	start gdh.txt
 
-setlocal enableextensions
+	:ProcDelay delayMSec_
 
-for /f "tokens=1-4 delims=:. " %%h in ("%time%") do set start_=%%h%%i%%j%%k
+	setlocal enableextensions
 
-:_procwaitloop
+	for /f "tokens=1-4 delims=:. " %%h in ("%time%") do set start_=%%h%%i%%j%%k
 
-for /f "tokens=1-4 delims=:. " %%h in ("%time%") do set now_=%%h%%i%%j%%k
+	:_procwaitloop
 
-set /a diff_=%now_%-%start_%
+	for /f "tokens=1-4 delims=:. " %%h in ("%time%") do set now_=%%h%%i%%j%%k
 
-if %diff_% LSS %1 goto _procwaitloop
+	set /a diff_=%now_%-%start_%
 
-endlocal & goto :EOF
+	if %diff_% LSS %1 goto _procwaitloop
+
+	endlocal & goto :EOF
 
 

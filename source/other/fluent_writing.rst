@@ -13,11 +13,11 @@ Sphinx + GitHub + ReadtheDocs 作为文档写作工具，用 Sphinx 生成文档
 	pic/01.png
   
 2.打开电脑命令行, 通过python的pip安装sphinx。
------------------------------------------------
-①　python -m pip install --upgrade pip
-②　pip install -i https://pypi.tuna.tsinghua.edu.cn/simple sphinx
-③　pip install -i https://pypi.tuna.tsinghua.edu.cn/simple sphinx sphinx-autobuild sphinx_rtd_theme
-(或pip install sphinx sphinx-autobuild sphinx_rtd_theme)
+---------------------------------------------
+
+ * python -m pip install --upgrade pip
+ * pip install -i https://pypi.tuna.tsinghua.edu.cn/simple sphinx
+ * pip install -i https://pypi.tuna.tsinghua.edu.cn/simple sphinx sphinx-autobuild sphinx_rtd_theme(或pip install sphinx sphinx-autobuild sphinx_rtd_theme)
 
 3.创建模板.
 -------------------
@@ -75,9 +75,18 @@ maxdepth指定目录显示的标题深度，通常选择1。caption是主题的�
 
 11. 支持markdown编辑
 --------------------------
-首先安装myst-parser (pip install myst-parser),此包同时可以解决git环境中乱码问题，然后在conf.py中添加::
+- 安装myst-parser包及recommonmark包 (pip install myst-parser，pip install recommonmark),此包同时可以解决git环境中乱码问题，然后在conf.py中添加::
 
 	extensions = ['myst_parser']
 	
+	from recommonmark.parser import CommonMarkParser
+	source_parsers = {
+		'.md': CommonMarkParser,
+	}
+	
 	source_suffix = ['.rst', '.md']
 	
+- 如果支持makedown表格，需要安装sphinx-markdown_tables包，然后在conf.py中添加:
+
+	extensions = ['myst_parser', 'sphinx_markdown_tables'
+	]

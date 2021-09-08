@@ -7,9 +7,11 @@ printf总结
 printf函数声明于 `<stdio.h>` 头文件中。
 
 * 函数原型：
+
  `int printf ( const char * format, ... );` 返回值：正确返回输出的字符总数，错误返回负值。
  
 * 调用格式：
+
  `printf("格式化字符串", 输出表列);` 
   格式化字符串包含：（1）字符串常量；（2）格式控制字符串；（3）转义字符。
 
@@ -32,7 +34,9 @@ printf函数声明于 `<stdio.h>` 头文件中。
 	printf("%#x\n",1000);  //输出:0x3e8
 	printf("%.0f %#.0f\n",1000.0,1000.0);//输出:(1000 1000.)当小数点后不输出值时依然输出小数点
 
+
 * 编译器内置的几个宏定义
+
 ANSI C标准中有几个标准预定义宏（也是常用的）::
 
 	__LINE__：当前的函数行 (int)
@@ -48,10 +52,10 @@ eg::
 	printf("file: %s\n", __FILE__);
     printf("function: %s\n", __FUNCTION__);
     printf("line: %d\n", __LINE__);
-	
-	
-* # 字符串化操作符
-在gcc的编译系统中，可以使用#将当前的内容转换成字符串。
+
+* #字符串化操作符
+
+在gcc的编译系统中，可以使用#将当前的内容转换成字符串.
 
 .. code-block:: C
 
@@ -74,10 +78,12 @@ eg::
 	x / y = 0
 	x + y = 8
 	x * y = 15
+
+* ##连接操作符
 	
-* ## 连接操作符	
 在gcc的编译系统中，##是C语言中的连接操作符，可以在编译的预处理阶段实现字符串连接的操作。
 在程序的调试语句中，##常用的方式如下
+
  `#define DEBUG(fmt, args...) printf(fmt, ##args)` 
 	
 * 调试宏第一种形式::
@@ -113,9 +119,10 @@ eg::
 
 	Date: Oct  5 2018,File: /code/main.c, Line: 00013: Hello World
 	sandbox> exited with status 0
-	
+
 * C99编译器标准允许你可以定义可变参数宏(variadic macros)，但不被ANSI/ISO C++ 所正式支持。
- `#define debug(...) printf(__VA_ARGS__)`   
+
+`#define debug(...) printf(__VA_ARGS__)`
 
 * printf()函数重定向方法
 

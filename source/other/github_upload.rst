@@ -25,8 +25,10 @@
 
 4. 为Github账户设置SSH key
 --------------------------------
+
 - ssh key是加密传输。由于本地Git仓库和Github仓库之间的传输是通过SSH加密的，所以连接时需要创建SSH KEY设置一下，先看一下你C盘用户目录下有没有.ssh目录，有的话看下里面有没有id_rsa和id_rsa.pub这两个文件，有就跳到下一步，没有就通过下面命令创建
- `ssh-keygen -t rsa -C "邮箱"`，用记事本打开id_rsa.pub，得到ssh key公钥。
+
+	`ssh-keygen -t rsa -C "邮箱"`，用记事本打开id_rsa.pub，得到ssh key公钥。
 
 - 进入github网址，Settings -> SSH and GPG keys -> New SSH key -> 填入一个title，再把ssh key公钥内容Key栏中。完成SSH的配置。
  

@@ -17,7 +17,7 @@ STC单片机下载程序一般需要冷启动，即需要先点击下载软件�
 
 - 方法一：
 
-.. code-block :: C
+.. code-block :: python
 	
 	sbit AutoDownload = P3^0; 
 	int main(void)

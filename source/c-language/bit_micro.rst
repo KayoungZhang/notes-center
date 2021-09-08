@@ -11,9 +11,11 @@
 	#define GET_BYTE2(x)	((x >> 16) & 0x000000FF)
 	#define GET_BYTE3(x)	((x >> 24) & 0x000000FF)
 	
-2. 获取32bit数据某一位::
+2. 获取32bit数据某一位:
 
-  #define GET_BIT(x, n)	((x & (1<<n)) >> n) 
+.. code-block:: python
+
+  #define GET_BIT(x, n)	((x & (1<<n)) >> n)
 
 3. 获取32bit数据某连续几位的值::
 
@@ -29,7 +31,9 @@
 	#define CLEAR_BYTE2(x)  (x & 0xFF00FFFF)
 	#define CLEAR_BYTE3(x)  (x & 0x00FFFFFF)
 	
-5. 32bit数据清零某一位::
+5. 32bit数据清零某一位:
+
+.. code-block:: python
 
   #define CLEAR_BIT(x, n)    (x & ~(1<<n))
 	
@@ -40,7 +44,9 @@
 	#define SET_BYTE2(x)	x | 0x00FF0000
 	#define SET_BYTE3(x)	x | 0xFF000000
 	
-7. 32bit数据某一位置位::
+7. 32bit数据某一位置位:
+
+.. code-block:: python
 
   #define SET_BIT(x, n)     x | (1<<n)
 
