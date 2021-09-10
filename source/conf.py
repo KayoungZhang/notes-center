@@ -17,13 +17,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'data center'
-copyright = '2021, KayoungZhang'
+project = 'Knowledge Collection'
+copyright = '2021, kayoungzhang'
 author = 'kayoung'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '1.0.1'
 
+html_logo = './logo.png'
 
 # -- General configuration ---------------------------------------------------
 
@@ -43,8 +44,8 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'zh_CN'
-
+# language = 'zh_CN'
+language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -57,7 +58,6 @@ source_parsers = {
 }
 source_suffix = ['.rst', '.md']
 
-
 master_doc = "index"
 
 # -- Options for HTML output -------------------------------------------------
@@ -68,8 +68,8 @@ master_doc = "index"
 # html_theme = 'alabaster'
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
+html_show_sourcelink = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

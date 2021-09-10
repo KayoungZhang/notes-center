@@ -1,7 +1,6 @@
 
-==================================================
 reStructuredText常用规则
-==================================================
+===========================
 
 .. contents:: 目录
 .. section-numbering
@@ -270,67 +269,64 @@ reStructuredText常用规则
 
 8. 提示框
 ---------------------
+
 ::
 
-	.. Attention:: Directives at large.
+    .. note:: This is note.(注解)
 
-	.. Caution:: Don't take any wooden nickels.
+    .. attention:: Directives at large.(注意)
 
-	.. DANGER:: Mad scientist at work!
+    .. warning:: This is warning.(警告)
 
-	.. Error:: Does not compute.
+    .. caution:: Don't take any wooden nickels.(警告)
 
-	.. Hint:: It's bigger than a bread box.
+    .. seealso:: This is seealso.(参见)
 
-	.. Important::
-	   - Wash behind your ears.
-	   - Clean up your room.
-	   - Call your mother.
-	   - Back up your data.
+    .. danger:: Mad scientist at work!(危险)
 
-	.. Note:: This is a note.
+    .. error:: Does not compute.(错误)
 
-	.. Tip:: 15% if the service is good.
+    .. hint:: It's bigger than a bread box.(提示)
 
-	.. WARNING:: Strong prose may provoke extreme mental exertion.
-	   Reader discretion is strongly advised.
+    .. important:: 
+      - Wash behind your ears.
+      - Clean up your room.
+      - Call your mother.
+      - Back up your data.(重要)
 
-	.. admonition:: And, by the way...
+    .. tip:: 15% if the service is good.(小技巧)
 
-	   You can make up your own admonition too.
+    .. admonition:: by the way
 
-	.. seealso::
+      You can make up your own admonition too.
 
-		本书并非一本介绍Git的书，并且假设读者已经掌握了Git的相关操作。如果读者对\
-		Git尚不了解，可以参考我写的 《Git权威指南》\ [#]_\ 一书。此外还可以从网上\
-		找到很多免费的、很好的Git资料，如：Git社区书\ [#]_\ 、Pro Git\ [#]_\ 等。
+效果如下：
 
-效果：
+.. note:: This is note.(注解)
 
-.. Attention:: Directives at large.
+.. attention:: Directives at large.(注意)
 
-.. Caution:: Don't take any wooden nickels.
+.. warning:: This is warning.(警告)
 
-.. DANGER:: Mad scientist at work!
+.. caution:: Don't take any wooden nickels.(警告)
 
-.. Error:: Does not compute.
+.. seealso:: This is seealso.(参见)
 
-.. Hint:: It's bigger than a bread box.
+.. danger:: Mad scientist at work!(危险)
 
-.. Important::
+.. error:: Does not compute.(错误)
+
+.. hint:: It's bigger than a bread box.(提示)
+
+.. important:: 
    - Wash behind your ears.
    - Clean up your room.
    - Call your mother.
-   - Back up your data.
+   - Back up your data.(重要)
 
-.. Note:: This is a note.
+.. tip:: 15% if the service is good.(小技巧)
 
-.. Tip:: 15% if the service is good.
-
-.. WARNING:: Strong prose may provoke extreme mental exertion.
-   Reader discretion is strongly advised.
-
-.. admonition:: And, by the way...
+.. admonition:: by the way
 
    You can make up your own admonition too.
 
@@ -340,17 +336,10 @@ reStructuredText常用规则
 
 	.. include:: ../README.rst	在index.rst中添加其他rst文件
 	.. contents:: 目录	       生成目录
-	
-	.. toctree::
-	   :glob:			生成次级标题目录
-	   :maxdepth: 3			显示最大目录层级
-	   :caption: 读书笔记	     显示 读书笔记
-	   :titlesonly:			只显示标题
-	   :numbered: 2			生成次级下两级标题目录
 
 参考
 ---------------
 https://linuxtools-rst.readthedocs.io/zh_CN/latest/helloworld.html
 https://www.jianshu.com/p/1885d5570b37
-https://docutils.sourceforge.io/docs/user/rst/quickref.html
+https://docutils.sourceforge.io/docs/user/rst/
 

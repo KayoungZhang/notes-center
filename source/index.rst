@@ -1,9 +1,8 @@
-.. ".. "是注释符号,"======= "上面文字是一级标题,"---------- "上面的文字是二级标题,"^^^^^^^^ "上面的文字是三级标题,"- "表示圆点
 
 .. include:: ../README.rst
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: 读书笔记 
    :titlesonly: 
    
@@ -64,7 +63,7 @@
    pc/office_hyperlink_error
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: 环境监测与技术
    :titlesonly:   
 

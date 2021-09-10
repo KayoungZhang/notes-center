@@ -1,4 +1,3 @@
-==================
 Notes Center
 ==================
 
@@ -8,7 +7,9 @@ Notes taking during learning and working.
 
 - `github website <https://github.com/KayoungZhang/notes-center>`_
 
-**common commands in git bash**::
+**common commands in git bash** 
+
+::
 
 	git add --    			//添加文档到暂存库
 	git commit -m "--"		//添加修改注释
