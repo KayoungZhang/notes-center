@@ -1,21 +1,16 @@
 
 .. include:: ../README.rst
 
+
 .. toctree::
    :maxdepth: 2
-   :caption: reST语法
-   :titlesonly:
-
-
+   :caption: sphinx+reST 
+   :titlesonly: 
+   
    other/fluent_writing
    rest-syntax/base-syntax
-   rest-syntax/cross-reference
-   rest-syntax/code-highlight
-   rest-syntax/pic-video
-   rest-syntax/math
-   rest-syntax/admonition
-   rest-syntax/directive-role
-   rest-syntax/rule
+
+
 
 .. toctree::
    :maxdepth: 2

@@ -2,7 +2,7 @@
 Sphinx + reST + github + ReadtheDocs编写文档
 =========================================================
 
-.. contents:: 目录
+.. contents:: :local:
 
 前言
 ------
@@ -29,12 +29,11 @@ Sphinx + reST + github + ReadtheDocs编写文档
 .. _第三方主题: https://sphinx-themes.org/
 
 建立项目
-------------
+--------
 
-- 新建文件夹，运行cmd命令行，进入此文件夹中，这里为doc_demo, 然后运行 
-    `sphinx-quickstart`，之后sphinx会出现如下输出，根据需要输入即可。
-    这里我建立了一个doc的Project，版本是1.0，作者名为kayoungzhang，
-    语言为zh_CN,将source与build目录分开。
+- 新建文件夹，运行cmd命令行，进入此文件夹中，这里为doc_demo, 然后运行 `sphinx-quickstart`，
+  之后sphinx会出现如下输出，根据需要输入即可。这里我建立了一个doc的Project，版本是1.0，
+  作者名为kayoungzhang，语言为zh_CN,将source与build目录分开。
   
 ::
 	
@@ -94,23 +93,17 @@ conf.py配置
 -------------
 
 * 主题样式
-  在conf.py中,屏蔽默认的主题，并添加新的主题
-  
-::
+  在conf.py中,屏蔽默认的主题，并添加新的主题::
 
 	# html_theme = 'alabaster'
 	import sphinx_rtd_theme
 	html_theme = "sphinx_rtd_theme"
 
-* LOGO设置,准备好logo图片 
-
-::
+* LOGO设置,准备好logo图片::
 	
 	html_logo = './logo.png'
 
-* 不显示源文件链接 
-
-::
+* 不显示源文件链接::
 	
 	html_show_sourcelink = False
 
