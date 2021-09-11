@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>sphinx文档规范 &mdash; Knowledge Collection 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1. 将本地项目上传到Github" href="../other/github_upload.html" />
+    <link rel="prev" title="引用" href="cross-reference.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Knowledge Collection
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">reST语法</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../other/fluent_writing.html">Sphinx + reST + github + ReadtheDocs编写文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="base-syntax.html">ReST基础语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="base-syntax.html#id2">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cross-reference.html">引用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cross-reference.html#id6">脚注</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">sphinx文档规范</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">读书笔记</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/github_upload.html">1. 将本地项目上传到Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../github/github_accelerate.html">2. github 网址加速访问方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/office_calender.html">3. Excel年度日程安排表设计方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/pressure_unit.html">4. 压力单位换算表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/tube.html">5. 管路直径不同名称</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/color.html">6. 网页设计中常用的12中颜色</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/hex.html">7. hex文件解析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/capacitor_inductor.html">8. 电容电感基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/office_protect.html">9. 保护工作表中公式不被修改</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/gdb-test.html">10. gdb调试指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/notepad-set.html">11. Notepad常用设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/sw_hw_test.html">12. 《调试九法：软硬件错误的排除之道》</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/communication_integrality.html">13. 《中兴通讯-信号完整性》</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/typora_basic.html">14. Typora基本教程</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">C语言基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/ascii.html">ASCII编码对照表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/bit_shift.html">C语言中位运算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/bit_micro.html">32位数据位操作基本方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/data_type.html">基本数据类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/pointer.html">指针</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/contraction.html">常见单词缩写表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/printf_format.html">printf总结</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品开发</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/product_document_system.html">产品文档体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/keil_usage.html">keil使用报错及技巧集锦</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/vscode_issue.html">vscode使用过程中错误解决方案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/stc_download.html">STC单片机纯软件实现程序自动下载功能操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/stc_autodownload.html">STC单片机自动下载程序的三种方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/usb-autodownload.html">USB一键下载单片机程序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/usb-rs232-ttl.html">RS232/USB/TTL电平相互转换</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">电脑疑难杂症</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pc/windows_path.html">Windows变量路径与通配符</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/bat_command.html">Windows bat批处理命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/HP-printer-wireless_setting.html">HP打印机无线网络设置及使用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/winshare.html">Windows通过网线局域网共享文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/office_hyperlink_error.html">Office打开超链接时显示组织策略阻止</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">环境监测与技术</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../environment/smoke_dust/nozzle.html">烟尘采样嘴的选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment/voc/C-absorb.html">不同条件对活性炭吸附VOC的影响</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Knowledge Collection</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>sphinx文档规范</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx">
+<h1>sphinx文档规范<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
+<p>开源项目的整体目录：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── README                    说明文档
+└── documentation             配套文档
+    ├── _build                文档编译输出目录
+    ├── conf.py               sphinx配置文件
+    ├── index.rst             目录
+    ├── make.bat
+    ├── Makefile
+    ├── _static
+    ├── _templates
+</pre></div>
+</div>
+<p>注意：每次新添加了rst文档，必须要修改documentation文件夹下的index.rst文件，将新增的rst文件，添加到对应的地方。</p>
+<div class="section" id="id1">
+<h2>图片<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>文档引用的图片存储在文档源码目录下的media文件夹中，按部分、章节及文档分目录存储。</p>
+<p>图片要直接使用如下形式,方便居中：</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> media/logo.png
+   <span class="nc">:align:</span> center
+</pre></div>
+</div>
+<p>不要使用如下形式，如下形式是docx转换后的格式，它不支持居中，见到要把它改好。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>|logo|
+
+<span class="p">..</span> <span class="nt">|logo|</span> <span class="ow">image</span><span class="p">::</span> media/logo.png
+</pre></div>
+</div>
+</div>
+<div class="section" id="rst">
+<h2>rst格式检查<a class="headerlink" href="#rst" title="Permalink to this headline">¶</a></h2>
+<p>使用vscode的rst插件在编写时就会有格式检查。编写文档时应尽量满足该格式检查的规范。
+对于docx转rst后的不规范文档，做到见一个改一个。</p>
+<p>make html时，编译会有提示输出，尽量让它不输出的warning。</p>
+</div>
+<div class="section" id="id2">
+<h2>文档编码和回车<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>文档编码统一用“utf-8”， 回车使用“LF”，不要使用“CRLF”，文档编码和回车可在VS-Code的右下角设置。</p>
+</div>
+<div class="section" id="id3">
+<h2>代码引用<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>超过3行的代码要加上行号、并用caption名指明代码片段的名，对于引用的代码文件，使用caption指明引用的路径名。</p>
+<p>如以下语法：</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> ../../base_code/hello.c
+   <span class="nc">:caption:</span> ../../base_code/hello.c
+   <span class="nc">:language:</span> c
+   <span class="nc">:linenos:</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="docx">
+<h2>类似docx的题注引用<a class="headerlink" href="#docx" title="Permalink to this headline">¶</a></h2>
+<p>rst可通过链接实现类似doc的题注引用，它通过给内容添加 <code class="docutils literal notranslate"><span class="pre">:name:</span></code> 属性来实现，
+代码、图片、表格等都可以使用这种方式，使用 <code class="docutils literal notranslate"><span class="pre">:name:</span></code> 属性来定义引用名，通过引用名+下划线来实现引用：</p>
+<p>语法：</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> ../../base_code/hello.c
+   <span class="nc">:caption:</span> ../../base_code/hello.c
+   <span class="nc">:language:</span> c
+   <span class="nc">:name:</span> 代码清单或自己起的引用名字
+   <span class="nc">:linenos:</span>
+
+引用的方式是使用 &quot;:name:&quot;定义的名字加下划线 &quot;_&quot;,如：
+
+代码清单或自己起的引用名字_
+</pre></div>
+</div>
+<p>效果：</p>
+<p>引用的方式是使用 “:name:”定义的名字加下划线 “_”,如：</p>
+<p><a href="#id5"><span class="problematic" id="id6">代码清单或自己起的引用名字_</span></a></p>
+<p>语法：</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> ../media/rest-syntax/pic-video/logo.png
+   <span class="nc">:align:</span> center
+   <span class="nc">:name:</span> 野火logo
+
+引用的方式是使用 &quot;:name:&quot;定义的名字加下划线 &quot;_&quot;,如：
+
+野火logo_
+</pre></div>
+</div>
+<p>效果：</p>
+<img alt="media/rest-syntax/pic-video/logo.png" class="align-center" id="logo" src="media/rest-syntax/pic-video/logo.png" />
+<p>引用的方式是使用 “:name:”定义的名字加下划线 “_”,如：</p>
+<p><a class="reference internal" href="#logo">野火logo</a></p>
+<p>语法：</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">list-table</span><span class="p">::</span> Frozen Delights!
+    <span class="nc">:widths:</span> 15 10 30
+    <span class="nc">:header-rows:</span> 1
+    <span class="nc">:name:</span> 测试表格
+
+    <span class="m">*</span> - Treat
+      <span class="m">-</span> Quantity
+      <span class="m">-</span> Description
+    <span class="m">*</span> - Albatross
+      <span class="m">-</span> 2.99
+      <span class="m">-</span> On a stick!
+    <span class="m">*</span> - Crunchy Frog
+      <span class="m">-</span> 1.49
+      <span class="m">-</span> If we took the bones out, it wouldn&#39;t be
+        crunchy, now would it?
+    <span class="m">*</span> - Gannet Ripple
+      <span class="m">-</span> 1.99
+      <span class="m">-</span> On a stick!
+
+引用的方式是使用 &quot;:name:&quot;定义的名字加下划线 &quot;_&quot;,如：
+
+测试表格_
+</pre></div>
+</div>
+<p>效果：</p>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Treat</p></th>
+<th class="head"><p>Quantity</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Albatross</p></td>
+<td><p>2.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crunchy Frog</p></td>
+<td><p>1.49</p></td>
+<td><p>If we took the bones out, it wouldn’t be
+crunchy, now would it?</p></td>
+</tr>
+<tr class="row-even"><td><p>Gannet Ripple</p></td>
+<td><p>1.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+</tbody>
+</table>
+<p>引用的方式是使用 “:name:”定义的名字加下划线 “_”,如：</p>
+<blockquote>
+<div><p><a href="#id7"><span class="problematic" id="id8">测试表格_</span></a></p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../other/github_upload.html" class="btn btn-neutral float-right" title="1. 将本地项目上传到Github" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cross-reference.html" class="btn btn-neutral float-left" title="引用" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, kayoungzhang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

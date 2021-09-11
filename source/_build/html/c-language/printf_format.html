@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>printf总结 &mdash; Knowledge Collection 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="产品文档体系" href="../other/product_document_system.html" />
+    <link rel="prev" title="常见单词缩写表" href="contraction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Knowledge Collection
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">reST语法</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/fluent_writing.html">Sphinx + reST + github + ReadtheDocs编写文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest-syntax/base-syntax.html">ReST基础语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest-syntax/base-syntax.html#id2">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest-syntax/cross-reference.html">引用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest-syntax/cross-reference.html#id4">脚注</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">读书笔记</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/github_upload.html">1. 将本地项目上传到Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../github/github_accelerate.html">2. github 网址加速访问方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/office_calender.html">3. Excel年度日程安排表设计方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/pressure_unit.html">4. 压力单位换算表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/tube.html">5. 管路直径不同名称</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/color.html">6. 网页设计中常用的12中颜色</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/hex.html">7. hex文件解析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/capacitor_inductor.html">8. 电容电感基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/office_protect.html">9. 保护工作表中公式不被修改</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/gdb-test.html">10. gdb调试指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/notepad-set.html">11. Notepad常用设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/sw_hw_test.html">12. 《调试九法：软硬件错误的排除之道》</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/communication_integrality.html">13. 《中兴通讯-信号完整性》</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/typora_basic.html">14. Typora基本教程</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">C语言基础</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ascii.html">ASCII编码对照表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bit_shift.html">C语言中位运算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bit_micro.html">32位数据位操作基本方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_type.html">基本数据类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pointer.html">指针</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contraction.html">常见单词缩写表</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">printf总结</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品开发</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/product_document_system.html">产品文档体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/keil_usage.html">keil使用报错及技巧集锦</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/vscode_issue.html">vscode使用过程中错误解决方案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/stc_download.html">STC单片机纯软件实现程序自动下载功能操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/stc_autodownload.html">STC单片机自动下载程序的三种方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/usb-autodownload.html">USB一键下载单片机程序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/usb-rs232-ttl.html">RS232/USB/TTL电平相互转换</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">电脑疑难杂症</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pc/windows_path.html">Windows变量路径与通配符</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/bat_command.html">Windows bat批处理命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/HP-printer-wireless_setting.html">HP打印机无线网络设置及使用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/winshare.html">Windows通过网线局域网共享文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/office_hyperlink_error.html">Office打开超链接时显示组织策略阻止</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">环境监测与技术</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../environment/smoke_dust/nozzle.html">烟尘采样嘴的选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment/voc/C-absorb.html">不同条件对活性炭吸附VOC的影响</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Knowledge Collection</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>printf总结</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="printf">
+<h1>printf总结<a class="headerlink" href="#printf" title="Permalink to this headline">¶</a></h1>
+<p>printf函数声明于 <cite>&lt;stdio.h&gt;</cite> 头文件中。</p>
+<ul class="simple">
+<li><p>函数原型：</p></li>
+</ul>
+<blockquote>
+<div><p><cite>int printf ( const char * format, … );</cite> 返回值：正确返回输出的字符总数，错误返回负值。</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>调用格式：</p></li>
+</ul>
+<blockquote>
+<div><dl class="simple">
+<dt><cite>printf(“格式化字符串”, 输出表列);</cite></dt><dd><p>格式化字符串包含：（1）字符串常量；（2）格式控制字符串；（3）转义字符。</p>
+</dd>
+</dl>
+</div></blockquote>
+<ul>
+<li><p>格式控制字符串组成:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%[flags][width][.prec][length]type  //%[标志][最小宽度][.精度][类型长度]类型。
+有符号十进制: printf(&quot;%d&quot;,123);//输出123
+无符号十进制: printf(&quot;%u&quot;,123);//输出123
+无符号八进制: printf(&quot;%o&quot;,123);//输出123
+无符号十六进制：        printf(&quot;0x%x 0x%X&quot;,123,123);  //输出0x7b 0x7B
+无符号十六进制：        printf(&quot;%#x %#X&quot;,123,123);  //输出0x7b 0X7B
+字符型数据：  printf(&quot;%c&quot;,64);//输出A
+字符串型数据： printf(&quot;%s&quot;,&quot;测试test&quot;);//输出：测试test
+单精度浮点数： printf(&quot;%.9f&quot;,0.000000123);//输出0.000000123
+科学计数法：  printf(&quot;%e %E&quot;,0.000000123,0.000000123);//输出1.230000e-07 1.230000E-07
+
+printf(&quot;%5d\n&quot;,1000);     //输出:( 1000)默认右对齐,左边补空格
+printf(&quot;%-5d\n&quot;,1000);     //输出:(1000 )左对齐,右边补空格
+printf(&quot;%05d\n&quot;,1000);    //输出:(01000)前面补0
+printf(&quot;%#x\n&quot;,1000);  //输出:0x3e8
+printf(&quot;%.0f %#.0f\n&quot;,1000.0,1000.0);//输出:(1000 1000.)当小数点后不输出值时依然输出小数点
+</pre></div>
+</div>
+</li>
+<li><p>编译器内置的几个宏定义</p></li>
+</ul>
+<p>ANSI C标准中有几个标准预定义宏（也是常用的）:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>__LINE__：当前的函数行 (int)
+__FILE__：当前程序源文件 (char*)
+__DATE__：在源文件中插入当前的编译日期
+__TIME__：在源文件中插入当前编译时间
+__STDC__：当要求程序严格遵循ANSI C标准时该标识被赋值为1
+__FUNCTION__:  当前运行的函数 (char*)
+__cplusplus：当编写C++程序时该标识符被定义。
+</pre></div>
+</div>
+<p>eg:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;file: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">__FILE__</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s2">&quot;function: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">__FUNCTION__</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s2">&quot;line: </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">__LINE__</span><span class="p">);</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>#字符串化操作符</p></li>
+</ul>
+<p>在gcc的编译系统中，可以使用#将当前的内容转换成字符串.</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="cp">#define DPRINT(expr) printf(&quot;%s = %d\n&quot;, #expr, expr);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">DPRINT</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">DPRINT</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">DPRINT</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>执行结果:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">/</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">15</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>##连接操作符</p></li>
+</ul>
+<p>在gcc的编译系统中，##是C语言中的连接操作符，可以在编译的预处理阶段实现字符串连接的操作。
+在程序的调试语句中，##常用的方式如下</p>
+<blockquote>
+<div><p><cite>#define DEBUG(fmt, args…) printf(fmt, ##args)</cite></p>
+</div></blockquote>
+<ul>
+<li><p>调试宏第一种形式:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="c1">#define DEBUG(fmt, args...)</span>
+<span class="p">{</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;file:</span><span class="si">%s</span><span class="s2"> function: </span><span class="si">%s</span><span class="s2"> line: </span><span class="si">%d</span><span class="s2"> &quot;</span><span class="p">,</span> <span class="n">__FILE__</span><span class="p">,</span> <span class="n">__FUNCTION__</span><span class="p">,</span> <span class="n">__LINE__</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="n">fmt</span><span class="p">,</span> <span class="c1">##args);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>调试宏的第二种定义方式:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#define DEBUG(fmt, args...)    printf(&quot;file:%s function: %s line: %d &quot;fmt, __FILE__, __FUNCTION__, __LINE__, ##args)</span>
+</pre></div>
+</div>
+</li>
+<li><p>实例:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;stdio.h&gt;</span>
+
+<span class="c1">#define USE_DEBUG  //开启DEBUG宏</span>
+
+<span class="c1">#if USE_DEBUG</span>
+<span class="c1">#define DEBUG(fmt, args...) printf(&quot;file:%s function: %s line: %d &quot;fmt, __FILE__, __FUNCTION__, __LINE__, ##args)</span>
+<span class="c1">#else</span>
+<span class="c1">#define DEBUG(fmt, args...)</span>
+
+<span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="nb">int</span> <span class="n">argc</span><span class="p">,</span> <span class="n">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">char</span> <span class="nb">str</span><span class="p">[]</span><span class="o">=</span><span class="s2">&quot;Hello World&quot;</span><span class="p">;</span>
+        <span class="n">DEBUG</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span><span class="nb">str</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>输出如下:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Date</span><span class="p">:</span> <span class="n">Oct</span>  <span class="mi">5</span> <span class="mi">2018</span><span class="p">,</span><span class="n">File</span><span class="p">:</span> <span class="o">/</span><span class="n">code</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">c</span><span class="p">,</span> <span class="n">Line</span><span class="p">:</span> <span class="mi">00013</span><span class="p">:</span> <span class="n">Hello</span> <span class="n">World</span>
+<span class="n">sandbox</span><span class="o">&gt;</span> <span class="n">exited</span> <span class="k">with</span> <span class="n">status</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>C99编译器标准允许你可以定义可变参数宏(variadic macros)，但不被ANSI/ISO C++ 所正式支持。</p></li>
+</ul>
+<p><cite>#define debug(…) printf(__VA_ARGS__)</cite></p>
+<ul class="simple">
+<li><p>printf()函数重定向方法</p></li>
+</ul>
+<p>方法一：
+1. 使用MicroLIB库，在KEIL-MDK中勾选Use MicroLIB选项
+2. 重定向fputc函数</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w">   </span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="kt">int</span><span class="w">  </span><span class="nf">fputc</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="kt">int</span><span class="w">  </span><span class="n">ch</span><span class="w"> </span><span class="p">,</span><span class="w">   </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="w">  </span><span class="n">stream</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">//USART_SendData(USART1, (unsigned char) ch);</span>
+<span class="w">        </span><span class="c1">//while (!(USART1-&gt;SR &amp; USART_FLAG_TXE));</span>
+<span class="w">        </span><span class="n">USART_SendChar</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">USART1</span><span class="w"> </span><span class="p">,</span><span class="w">   </span><span class="p">(</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="n">ch</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w">  </span><span class="n">ch</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>方法二：
+半主机模式:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#pragma   import ( __use_no_semihosting )</span>
+<span class="n">struct</span>  <span class="n">__FILE</span>
+<span class="p">{</span>
+        <span class="nb">int</span>  <span class="n">handle</span> <span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">FILE</span>  <span class="n">__stdout</span> <span class="p">;</span>
+<span class="n">_sys_exit</span> <span class="p">(</span> <span class="nb">int</span>  <span class="n">x</span> <span class="p">)</span>
+<span class="p">{</span>
+        <span class="n">x</span>  <span class="o">=</span>  <span class="n">x</span> <span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb">int</span>  <span class="n">fputc</span> <span class="p">(</span> <span class="nb">int</span>  <span class="n">ch</span> <span class="p">,</span> <span class="n">FILE</span>   <span class="o">*</span> <span class="n">f</span> <span class="p">)</span>
+<span class="p">{</span>
+        <span class="k">while</span> <span class="p">((</span> <span class="n">USART1</span> <span class="o">-&gt;</span> <span class="n">SR</span> <span class="o">&amp;</span> <span class="mh">0X40</span> <span class="p">)</span><span class="o">==</span> <span class="mi">0</span> <span class="p">);</span>
+
+        <span class="n">USART1</span> <span class="o">-&gt;</span> <span class="n">DR</span>  <span class="o">=</span> <span class="p">(</span> <span class="n">u8</span> <span class="p">)</span> <span class="n">ch</span> <span class="p">;</span>
+        <span class="k">return</span>  <span class="n">ch</span> <span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../other/product_document_system.html" class="btn btn-neutral float-right" title="产品文档体系" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="contraction.html" class="btn btn-neutral float-left" title="常见单词缩写表" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, kayoungzhang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

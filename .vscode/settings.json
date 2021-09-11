@@ -1,0 +1,4 @@
+{
+    "restructuredtext.pythonRecommendation.disabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}\\source"
+}

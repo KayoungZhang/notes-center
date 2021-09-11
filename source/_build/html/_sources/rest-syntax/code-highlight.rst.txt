@@ -1,0 +1,163 @@
+
+
+代码高亮
+------------
+
+参考说明：
+http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#toctree-directive
+
+支持的高亮语言：
+https://pygments.org/docs/lexers#lexers-for-various-shells
+
+
+在reST文档中列出代码有三种方式：
+
+- 单行代码 用``code``
+- 简单代码块 在代码块的上一个段落后面加2个冒号，空一行后开始代码块，代码块要缩进
+- 复杂代码块 使用code-block指导语句，还可以选择列出行号和高亮重点行等
+
+单行代码段
+~~~~~~~~~~~~~~~~
+
+示例：
+
+::
+
+   ``#define LED P23``
+
+效果:
+
+``#define LED P23``
+
+简单代码块
+~~~~~~~~~~~~~~
+
+示例：
+::
+
+   ::
+
+      #此命令在主机执行
+      sudo apt install python
+      echo "helloworld,this is a script test!"
+
+效果：
+
+::
+
+   #此命令在主机执行
+   sudo apt install python
+   echo "helloworld,this is a script test!"
+
+
+复杂代码块
+~~~~~~~~~~~~~~
+
+示例：
+
+::
+
+      .. code-block:: sh
+      :caption: test
+      :name: test333
+      :emphasize-lines: 2,4-15
+      :linenos:
+
+      #此命令在主机执行
+      sudo apt install python
+      echo "helloworld,this is a script test!"
+
+      int main()
+      {
+         printf("hello, world! This is a C program.\n");
+         for(int i=0;i<10;i++ ){
+            printf("output i=%d\n",i);
+         }
+
+         return 0;
+      }
+
+      module  key_filter
+      #(
+         parameter CNT_MAX = 20'd999_999 //计数器计数最大值
+      )
+      (
+         input   wire    sys_clk     ,   //系统时钟50Mhz
+         input   wire    sys_rst_n   ,   //全局复位
+         input   wire    key_in      ,   //按键输入信号
+
+         output  reg     key_flag        //key_flag为1时表示消抖后检测到按键被按下
+                                          //key_flag为0时表示没有检测到按键被按下
+      );
+
+
+      注意：
+      code-block 后面可以是不同的编程语言，sh、c、v(verilog)、makefile等
+      caption -> 代码前面显示的名字
+      name -> 注释的名字
+      emphasize-lines -> 高亮的行
+      linenos -> 显示行数
+
+效果：
+
+.. code-block:: sh
+   :caption: test
+   :name: test333
+   :emphasize-lines: 2,4-15
+   :linenos:
+
+   #此命令在主机执行
+   sudo apt install python
+   echo "helloworld,this is a script test!"
+
+   int main()
+   {
+      printf("hello, world! This is a C program.\n");
+      for(int i=0;i<10;i++ ){
+         printf("output i=%d\n",i);
+      }
+
+      return 0;
+   }
+
+   module  key_filter
+   #(
+      parameter CNT_MAX = 20'd999_999 //计数器计数最大值
+   )
+   (
+      input   wire    sys_clk     ,   //系统时钟50Mhz
+      input   wire    sys_rst_n   ,   //全局复位
+      input   wire    key_in      ,   //按键输入信号
+
+      output  reg     key_flag        //key_flag为1时表示消抖后检测到按键被按下
+                                       //key_flag为0时表示没有检测到按键被按下
+   );
+
+
+
+literalinclude直接嵌入本地文件并高亮
+--------------------------------------
+
+直接嵌入文件，包含标题、代码语言、高亮、带编号以及名称方便引用。
+
+::
+
+   .. literalinclude:: democode/hello.c
+      :caption: ../../base_code/hello.c
+      :language: c
+      :emphasize-lines: 5,7-12
+      :linenos:
+      :name: hello.c
+
+效果：
+
+.. literalinclude:: democode/hello.c
+   :caption: ../../base_code/hello.c
+   :language: c
+   :emphasize-lines: 5,7-12
+   :linenos:
+   :name: hello.c
+
+
+
+

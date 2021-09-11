@@ -3,11 +3,26 @@
 
 .. toctree::
    :maxdepth: 2
+   :caption: reST语法
+   :titlesonly:
+
+
+   other/fluent_writing
+   rest-syntax/base-syntax
+   rest-syntax/cross-reference
+   rest-syntax/code-highlight
+   rest-syntax/pic-video
+   rest-syntax/math
+   rest-syntax/admonition
+   rest-syntax/directive-role
+   rest-syntax/rule
+
+.. toctree::
+   :maxdepth: 2
    :caption: 读书笔记 
    :titlesonly: 
+   :numbered:
    
-   other/fluent_writing
-   other/reStructuredText
    other/github_upload
    github/github_accelerate
    other/office_calender

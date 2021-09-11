@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Sphinx + reST + github + ReadtheDocs编写文档 &mdash; Knowledge Collection 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="reStructuredText常用规则" href="reStructuredText.html" />
+    <link rel="prev" title="Notes Center" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Knowledge Collection
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">读书笔记</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx + reST + github + ReadtheDocs编写文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reStructuredText.html">reStructuredText常用规则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github_upload.html">将本地项目上传到Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../github/github_accelerate.html">github 网址加速访问方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="office_calender.html">Excel年度日程安排表设计方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pressure_unit.html">压力单位换算表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tube.html">管路直径不同名称</a></li>
+<li class="toctree-l1"><a class="reference internal" href="color.html">网页设计中常用的12中颜色</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hex.html">hex文件解析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capacitor_inductor.html">电容电感基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="office_protect.html">保护工作表中公式不被修改</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdb-test.html">gdb调试指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notepad-set.html">Notepad常用设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sw_hw_test.html">《调试九法：软硬件错误的排除之道》</a></li>
+<li class="toctree-l1"><a class="reference internal" href="communication_integrality.html">《中兴通讯-信号完整性》</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typora_basic.html">Typora基本教程</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">C语言基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/ascii.html">ASCII编码对照表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/bit_shift.html">C语言中位运算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/bit_micro.html">32位数据位操作基本方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/data_type.html">基本数据类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/pointer.html">指针</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/contraction.html">常见单词缩写表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c-language/printf_format.html">printf总结</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品开发</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="product_document_system.html">产品文档体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keil_usage.html">keil使用报错及技巧集锦</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode_issue.html">vscode使用过程中错误解决方案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/stc_download.html">STC单片机纯软件实现程序自动下载功能操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/stc_autodownload.html">STC单片机自动下载程序的三种方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/usb-autodownload.html">USB一键下载单片机程序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stc/usb-rs232-ttl.html">RS232/USB/TTL电平相互转换</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">电脑疑难杂症</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pc/windows_path.html">Windows变量路径与通配符</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/bat_command.html">Windows bat批处理命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/HP-printer-wireless_setting.html">HP打印机无线网络设置及使用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/winshare.html">Windows通过网线局域网共享文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pc/office_hyperlink_error.html">Office打开超链接时显示组织策略阻止</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">环境监测与技术</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../environment/smoke_dust/nozzle.html">烟尘采样嘴的选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environment/voc/C-absorb.html">不同条件对活性炭吸附VOC的影响</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Knowledge Collection</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Sphinx + reST + github + ReadtheDocs编写文档</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-rest-github-readthedocs">
+<h1><a class="toc-backref" href="#id7">Sphinx + reST + github + ReadtheDocs编写文档</a><a class="headerlink" href="#sphinx-rest-github-readthedocs" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title">目录</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#sphinx-rest-github-readthedocs" id="id7">Sphinx + reST + github + ReadtheDocs编写文档</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id2" id="id8">前言</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id9">安装软件包</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id10">建立项目</a></p></li>
+<li><p><a class="reference internal" href="#conf-py" id="id11">conf.py配置</a></p></li>
+<li><p><a class="reference internal" href="#rst" id="id12">创建rst文件</a></p></li>
+<li><p><a class="reference internal" href="#index-rsttoc-tree" id="id13">index.rst中TOC tree设置</a></p></li>
+<li><p><a class="reference internal" href="#githubgitee" id="id14">github或gitee托管</a></p></li>
+<li><p><a class="reference internal" href="#readthedocs" id="id15">ReadtheDocs托管</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id8">前言</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>使用标记语言(Markup Language)写文档是当前比较流行的文档编写方式，
+目前标记语言主要有两种，Markdown和reStructuredText（简称reST)。
+很多开源项目的文档就是用Sphinx+reST做的，上传到github和ReadtheDocs，
+通过浏览器就可以直接查看带有格式的文档了。结合网上众多教程，总结了以下使用教程。</p>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id9">安装软件包</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>安装 <a class="reference external" href="https://www.python.org/">python3</a>,并添加bin目录到环境变量中。</p></li>
+<li><p>安装 <a class="reference external" href="https://git-scm.com/download">git 软件</a>，并添加bin目录到环境变量中。</p></li>
+<li><p>通过pip工具安装 <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html">sphinx工具</a>,
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">Sphinx</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-i</span> <span class="pre">https://pypi.tuna.tsinghua.edu.cn/simple</span> <span class="pre">sphinx</span></code></p></li>
+<li><p>安装 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/theming.html#builtin-themes">Sphinx Themes</a>, 这里选择 <a class="reference external" href="https://sphinx-themes.org/">第三方主题</a> “Read the Docs”,
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span> <span class="pre">sphinx-autobuild</span> <span class="pre">sphinx_rtd_theme</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-i</span> <span class="pre">https://pypi.tuna.tsinghua.edu.cn/simple</span> <span class="pre">sphinx</span> <span class="pre">sphinx-autobuild</span> <span class="pre">sphinx_rtd_theme</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id10">建立项目</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>新建文件夹，运行cmd命令行，进入此文件夹中，这里为doc_demo, 然后运行
+<cite>sphinx-quickstart</cite>，之后sphinx会出现一些问题，根据情况输入即可。
+这里我建立了一个doc的Project，版本是1.0，作者名为kayoungzhang，
+语言为zh_CN,将source与build目录分开。</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator&gt;cd doc_demo
+
+C:\Users\Administrator\doc_demo&gt;sphinx-quickstart
+Welcome to the Sphinx 3.5.4 quickstart utility.
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+Selected root path: .
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory &quot;_build&quot; within the root path, or you separate
+&quot;source&quot; and &quot;build&quot; directories within the root path.
+&gt; Separate source and build directories (y/n) [n]: y
+
+The project name will occur in several places in the built documentation.
+&gt; Project name: doc
+&gt; Author name(s): kayoungzhang
+&gt; Project release []: 1.0
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
+&gt; Project language [en]: zh_CN
+
+Creating file C:\Users\Administrator\doc_demo\source\conf.py.
+Creating file C:\Users\Administrator\doc_demo\source\index.rst.
+Creating file C:\Users\Administrator\doc_demo\Makefile.
+Creating file C:\Users\Administrator\doc_demo\make.bat.
+
+Finished: An initial directory structure has been created.
+
+You should now populate your master file C:\Users\Administrator\doc_demo\source\
+index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+make builder
+where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
+
+C:\Users\Administrator\doc_demo&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>doc_demo文件夹中出现一些文件：</p>
+<ul>
+<li><p>source和build分别是源文件和编译生成文件的存放目录，</p></li>
+<li><p>Makefile和make.bat分别是Linux和Windows下的makefile。</p></li>
+<li><p>conf.py是配置文件，index.rst是主框架文件，_static是静态文件存放目录，_templates是模板存放目录。</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="conf-py">
+<h2><a class="toc-backref" href="#id11">conf.py配置</a><a class="headerlink" href="#conf-py" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>主题样式
+在conf.py中,屏蔽默认的主题，并添加新的主题</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># html_theme = &#39;alabaster&#39;</span>
+<span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_rtd_theme&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>LOGO设置,准备好logo图片</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;./logo.png&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>不显示源文件链接</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_show_sourcelink</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>支持markdown编辑 <code class="docutils literal notranslate"><span class="pre">安装myst-parser包及recommonmark包</span> <span class="pre">(pip</span> <span class="pre">install</span> <span class="pre">myst-parser，pip</span> <span class="pre">install</span> <span class="pre">recommonmark)</span></code></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;myst_parser&#39;</span><span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">recommonmark.parser</span> <span class="kn">import</span> <span class="n">CommonMarkParser</span>
+<span class="n">source_parsers</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;.md&#39;</span><span class="p">:</span> <span class="n">CommonMarkParser</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.rst&#39;</span><span class="p">,</span> <span class="s1">&#39;.md&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>支持markdown 表格 <code class="docutils literal notranslate"><span class="pre">安装sphinx-markdown_tables包(pip</span> <span class="pre">install</span> <span class="pre">sphinx-markdown_tables)</span></code></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>extensions = [‘myst_parser’, ‘sphinx_markdown_tables’]
+</pre></div>
+</div>
+</div>
+<div class="section" id="rst">
+<h2><a class="toc-backref" href="#id12">创建rst文件</a><a class="headerlink" href="#rst" title="Permalink to this headline">¶</a></h2>
+<p>在source文件夹中创建sphinx.rst和vscode.rst文档，同时新建文件夹docxtorst.rst,
+并在其中创建docxtorst.rst文档。并在其中添加标题和内容。</p>
+</div>
+<div class="section" id="index-rsttoc-tree">
+<h2><a class="toc-backref" href="#id13">index.rst中TOC tree设置</a><a class="headerlink" href="#index-rsttoc-tree" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+   <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Table</span> <span class="n">of</span> <span class="n">Contents</span>
+   <span class="p">:</span><span class="n">titlesonly</span><span class="p">:</span>
+   <span class="p">:</span><span class="n">numbered</span><span class="p">:</span>
+
+   <span class="n">sphinx</span>
+   <span class="n">vscode</span>
+   <span class="n">docxtorst</span><span class="o">/</span><span class="n">docxtorst</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>maxdepth -&gt; 目录中可显示标题的最多级数，不添加则会显示文档中所有标题</p></li>
+<li><p>caption -&gt; toctree显示标题</p></li>
+<li><p>titleonly -&gt;只想显示toctree文档标题，而不显示同一级别的其他标题</p></li>
+<li><p>numbered -&gt; 给罗列的文档标题进行显示标号，子目录也会自动编号</p></li>
+<li><p>sphinx、vscode -&gt;当前index.rst文档所在目录下的sphinx.rst和vscode.rst文档</p></li>
+<li><p>docxtorst/docxtorst -&gt; docxtorst文件夹下的docxtorst.rst文档</p></li>
+</ul>
+</div>
+<p>运行 <cite>make html</cite> 编译生成html文件,并在build文件夹的html文件夹下
+打开html文件即可看到具体的网页实现:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Administrator</span>\<span class="n">doc_demo</span><span class="o">&gt;</span><span class="n">make</span> <span class="n">html</span>
+<span class="n">Running</span> <span class="n">Sphinx</span> <span class="n">v3</span><span class="mf">.5.4</span>
+<span class="n">loading</span> <span class="n">translations</span> <span class="p">[</span><span class="n">zh_CN</span><span class="p">]</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">loading</span> <span class="n">pickled</span> <span class="n">environment</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">myst</span> <span class="n">v0</span><span class="mf">.14.0</span><span class="p">:</span> <span class="n">MdParserConfig</span><span class="p">(</span><span class="n">renderer</span><span class="o">=</span><span class="s1">&#39;sphinx&#39;</span><span class="p">,</span> <span class="n">commonmark_only</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dmath_all</span>
+<span class="n">ow_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dmath_allow_space</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dmath_allow_digits</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dmath_double_in</span>
+<span class="n">line</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">update_mathjax</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">enable_extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dollarmath&#39;</span><span class="p">],</span> <span class="n">disable_synta</span>
+<span class="n">x</span><span class="o">=</span><span class="p">[],</span> <span class="n">url_schemes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">heading_anchors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">html_meta</span><span class="o">=</span><span class="p">[],</span> <span class="n">footnote_transition</span><span class="o">=</span>
+<span class="kc">True</span><span class="p">,</span> <span class="n">substitutions</span><span class="o">=</span><span class="p">[],</span> <span class="n">sub_delimiters</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;{&#39;</span><span class="p">,</span> <span class="s1">&#39;}&#39;</span><span class="p">],</span> <span class="n">words_per_minute</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<span class="n">building</span> <span class="p">[</span><span class="n">mo</span><span class="p">]:</span> <span class="n">targets</span> <span class="k">for</span> <span class="mi">0</span> <span class="n">po</span> <span class="n">files</span> <span class="n">that</span> <span class="n">are</span> <span class="n">out</span> <span class="n">of</span> <span class="n">date</span>
+<span class="n">building</span> <span class="p">[</span><span class="n">html</span><span class="p">]:</span> <span class="n">targets</span> <span class="k">for</span> <span class="mi">1</span> <span class="n">source</span> <span class="n">files</span> <span class="n">that</span> <span class="n">are</span> <span class="n">out</span> <span class="n">of</span> <span class="n">date</span>
+<span class="n">updating</span> <span class="n">environment</span><span class="p">:</span> <span class="p">[</span><span class="n">config</span> <span class="n">changed</span> <span class="p">(</span><span class="s1">&#39;source_parsers&#39;</span><span class="p">)]</span> <span class="mi">4</span> <span class="n">added</span><span class="p">,</span> <span class="mi">0</span> <span class="n">changed</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">removed</span>
+<span class="n">reading</span> <span class="n">sources</span><span class="o">...</span> <span class="p">[</span><span class="mi">100</span><span class="o">%</span><span class="p">]</span> <span class="n">vscode</span>
+<span class="n">looking</span> <span class="k">for</span> <span class="n">now</span><span class="o">-</span><span class="n">outdated</span> <span class="n">files</span><span class="o">...</span> <span class="n">none</span> <span class="n">found</span>
+<span class="n">pickling</span> <span class="n">environment</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">checking</span> <span class="n">consistency</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">preparing</span> <span class="n">documents</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">Building</span> <span class="n">prefix</span> <span class="nb">dict</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">default</span> <span class="n">dictionary</span> <span class="o">...</span>
+<span class="n">Loading</span> <span class="n">model</span> <span class="kn">from</span> <span class="nn">cache</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ADMINI</span><span class="o">~</span><span class="mi">1</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">jieba</span><span class="o">.</span><span class="n">cache</span>
+<span class="n">Loading</span> <span class="n">model</span> <span class="n">cost</span> <span class="mf">1.264</span> <span class="n">seconds</span><span class="o">.</span>
+<span class="n">Prefix</span> <span class="nb">dict</span> <span class="n">has</span> <span class="n">been</span> <span class="n">built</span> <span class="n">succesfully</span><span class="o">.</span>
+<span class="n">writing</span> <span class="n">output</span><span class="o">...</span> <span class="p">[</span><span class="mi">100</span><span class="o">%</span><span class="p">]</span> <span class="n">vscode</span>
+<span class="n">generating</span> <span class="n">indices</span><span class="o">...</span> <span class="n">genindex</span> <span class="n">done</span>
+<span class="n">writing</span> <span class="n">additional</span> <span class="n">pages</span><span class="o">...</span> <span class="n">search</span> <span class="n">done</span>
+<span class="n">copying</span> <span class="n">images</span><span class="o">...</span> <span class="p">[</span><span class="mi">100</span><span class="o">%</span><span class="p">]</span> <span class="n">docxtorst</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">docxto015</span><span class="o">.</span><span class="n">png</span>
+<span class="n">copying</span> <span class="n">static</span> <span class="n">files</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">copying</span> <span class="n">extra</span> <span class="n">files</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">dumping</span> <span class="n">search</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">Chinese</span> <span class="p">(</span><span class="n">code</span><span class="p">:</span> <span class="n">zh</span><span class="p">)</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">dumping</span> <span class="nb">object</span> <span class="n">inventory</span><span class="o">...</span> <span class="n">done</span>
+<span class="n">build</span> <span class="n">succeeded</span><span class="o">.</span>
+
+<span class="n">The</span> <span class="n">HTML</span> <span class="n">pages</span> <span class="n">are</span> <span class="ow">in</span> <span class="n">build</span>\<span class="n">html</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>具体效果图：</p>
+<a class="reference internal image-reference" href="../_images/index.png"><img alt="template for the tutorial" class="align-center" src="../_images/index.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="githubgitee">
+<h2><a class="toc-backref" href="#id14">github或gitee托管</a><a class="headerlink" href="#githubgitee" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>删除build文件夹。</p></li>
+<li><p>在GitHub创建一个仓库，然后与本地doc文件夹进行同步，并添加到远程仓库。</p></li>
+</ul>
+</div>
+<div class="section" id="readthedocs">
+<h2><a class="toc-backref" href="#id15">ReadtheDocs托管</a><a class="headerlink" href="#readthedocs" title="Permalink to this headline">¶</a></h2>
+<p>在 <a class="reference external" href="https://readthedocs.org/">Read the Docs</a> 上注册一个账号,
+登陆后点击 “Import”.给该文档项目填写一个名字比如 “doc”,
+并添加你在GitHub上面的工程HTTPS链接, 选择仓库类型为Git,
+其他项目根据自己的需要填写,点击 “Create”，创建完后会自动激活Webhooks，
+不用再去GitHub设置，从此只要你往这个仓库push内容，readthedoc上面的文档就会自动更新。
+可参考readthedocs <a class="reference external" href="https://github.com/rtfd/readthedocs.org">官方文档</a>。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="reStructuredText.html" class="btn btn-neutral float-right" title="reStructuredText常用规则" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Notes Center" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, kayoungzhang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
