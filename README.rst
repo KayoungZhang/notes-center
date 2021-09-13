@@ -31,6 +31,6 @@ Notes taking during learning and working.
 	 git fetch <remote>               #从远程库获取代码
 	 git pull <remote> <branch>       #下载代码及快速合并
 	 git push <remote> <branch>       #上传代码及快速合并
-	 git push origin master		      #第一次向仓库推送文件
+	 git push origin master           #第一次向仓库推送文件
 
 
