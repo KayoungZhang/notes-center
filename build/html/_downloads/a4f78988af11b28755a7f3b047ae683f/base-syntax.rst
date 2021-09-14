@@ -1,8 +1,7 @@
 
 reST基础语法
 ================
-.. contents:: 
-   :local: 	 
+.. contents:: :local: 	 
 
 RestructureText(ReST)是Docutils和Sphinx都使用的默认明文标记语言。
 Docutils提供了基本的重构文本语法，而Sphinx对此进行了扩展，以支持额外的功能。
@@ -702,7 +701,5 @@ rst格式
 	.. contents:: 目录	        生成目录
 	.. section-numbering::		生成的目录自动编号
 	
-	.. contents:: 
-	   :local:		  当前主题之下生成目录
-	   :depth: 3	  目录深度为3级
+	.. contents:: :local:		当前主题之下生成目录
 
