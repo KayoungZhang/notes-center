@@ -34,7 +34,7 @@ html_logo = './logo.png'
 #extensions = [
 #]
 # 支持markdown表格，需要安装sphinx-markdown_tables,然后添加sphinx_markdown_tables
-extensions = ['myst_parser', 'sphinx_markdown_tables'
+extensions = ['recommonmark', 'sphinx_markdown_tables'
 ]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
