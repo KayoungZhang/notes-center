@@ -3,7 +3,7 @@ Notes Center
 
 Notes taking during learning and working.
 
-- `Read The Docs website <https://notes-center.readthedocs.io/zh_CN/latest/index.html>`_
+- `Read The Docs website <https://notes-center.readthedocs.io/en/latest/>`_
 
 **Git 常用命令速查表** 
 
